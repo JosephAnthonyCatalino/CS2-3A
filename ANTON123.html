@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>User's Info</title>
+</head>
+<body>
+    <!-- This form sends user input data to process.php using the POST method -->
+    <form action="ANTON1234.php" method="POST">
+        
+        <!-- Input field for the user's first name -->
+        First Name: <input type="text" name="firstname" required><br>
+
+        <!-- Input field for the user's age (accepts only numeric values) -->
+        Age: <input type="number" name="age" required><br>
+
+        <!-- Dropdown selection for the user's gender -->
+        Gender:
+        <select name="gender" required>
+            <option value="">-- Select Gender --</option>
+            <option>Male</option>
+            <option>Female</option>
+        </select><br>
+
+        <!-- Text area for the user's life quote -->
+        Quote in Life:<br>
+        <textarea name="quote" required></textarea><br>
+
+        <!-- Submit button to send the form data -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
